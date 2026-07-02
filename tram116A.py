@@ -1,11 +1,8 @@
 n = int(input( ))
 current = 0
-count = []
+max_passengers = 0
 for _ in range(n):
     k , b = list(map(int,input( ).split()))
     current = current - k + b
-    a = current + a
-    
-    print(a)
-    
-    
+    max_passengers = max(max_passengers, current)
+print(max_passengers)
